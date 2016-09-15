@@ -24,3 +24,15 @@ If the `typings` folder doesn't show up after running npm install, you'll need t
 npm run typings install
 ```
 
+0.3: Create minimal app
+----------------------
+
+```
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+@NgModule({
+    imports:      [ BrowserModule ]
+})
+export class AppModule { }
+```
