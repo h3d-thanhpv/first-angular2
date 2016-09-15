@@ -36,3 +36,31 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class AppModule { }
 ```
+
+0.4: Create a component and add it to your application
+-----------------------
+
+create a component: `app.component.ts`:
+
+```
+import { Component } from '@angular/core';
+@Component({
+  selector: 'my-app',
+  template: '<h1>My First Angular 2 App</h1>'
+})
+export class AppComponent { }
+```
+
+Add to application: `app.modules.ts`:
+
+```
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent }   from './app.component';
+@NgModule({
+  imports:      [ BrowserModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
