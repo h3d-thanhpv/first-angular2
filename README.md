@@ -64,3 +64,16 @@ import { AppComponent }   from './app.component';
 })
 export class AppModule { }
 ```
+
+0.5: Start up your application
+-----------------
+
+Create the file `app/main.ts` with the following content:
+
+```
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
+```
+
