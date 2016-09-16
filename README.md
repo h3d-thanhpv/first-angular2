@@ -40,7 +40,7 @@ export class AppModule { }
 0.4: Create a component and add it to your application
 -----------------------
 
-create a component: `app.component.ts`:
+create a component: `heroes.component.ts`:
 
 ```
 import { Component } from '@angular/core';
